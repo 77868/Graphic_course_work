@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.24)
+project(Graphic_Course_Work)
+find_package(SDL REQUIRED)
+set(SDL_VIDEODRIVER X11)
+add_executable(programm src/source.cpp src/matrix.cpp src/Object.cpp)
+target_link_libraries(programm SDL3_main SDL3 SDL_mixer X11 )
